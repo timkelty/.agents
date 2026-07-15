@@ -20,7 +20,7 @@ Keep orchestration, review-feedback fixes, commits, pushes, review-thread replie
    - Record the current head commit.
    - Run the host's native read-only correctness review against the base. If none is available, perform a fresh correctness review of the diff.
    - If Ponytail review is available, run it against the same diff. If it is unavailable, continue without it and report the skip in the final result; do not treat its absence as a failed gate.
-   - Ensure Copilot Code Review evaluates the recorded head. Rely on automatic review only when the reported settings cover the pull request's current draft state and new pushes; otherwise explicitly request `copilot-pull-request-reviewer[bot]`. If a current-head review cannot be requested or observed, ask the user instead of waiting indefinitely and leave the pull request draft.
+   - Rely only on repository-configured automatic Copilot Code Review; never request it manually. When the reported settings cover the pull request's current draft state and head, wait for the review and address its actionable comments. If the settings are unavailable, not configured, or do not cover the current head, report that and continue without treating the missing Copilot review as a failed gate.
    - Ask the user when reviewers disagree or a finding would change scope or product behavior.
    - Address actionable, in-scope findings; validate; commit; and push. Prefix agent-written review-thread replies with `🤖 Agent response:`. Reply before resolving a review thread, and resolve only addressed or obsolete threads.
    - If a commit or push changes the head, restart the entire loop. Exit only when the recorded head is still current and has no unresolved actionable findings.
