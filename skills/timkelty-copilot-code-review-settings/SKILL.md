@@ -8,7 +8,7 @@ description: Show the effective GitHub Copilot Code Review settings for a reposi
 Show the effective repository and inherited ruleset configuration without changing it.
 
 1. Resolve the GitHub repository and target branch. Use an explicitly requested branch when present, an existing pull request's base branch next, and the repository's default branch otherwise.
-2. Use `gh` to read the effective rules for that branch, URL-encoding the branch name. Select rules whose type is `copilot_code_review`; the effective branch-rules endpoint includes inherited rules.
+2. Use `gh api --paginate` to read every page of effective rules for that branch, URL-encoding the branch name. Select rules whose type is `copilot_code_review`; the effective branch-rules endpoint includes inherited rules.
 3. Read the referenced ruleset details when available to obtain each source's name, scope, and enforcement status. If multiple effective rules apply, list every source and treat an option as enabled when any active applicable rule enables it.
 4. Render this Markdown, replacing the repository, branch, and values:
 
