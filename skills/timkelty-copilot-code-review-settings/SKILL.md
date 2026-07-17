@@ -1,6 +1,6 @@
 ---
 name: copilot-code-review-settings
-description: Show the effective GitHub Copilot Code Review settings for a repository and target branch, including automatic reviews, draft pull requests, new pushes, enforcement, and source rulesets. Use when the user invokes `$copilot-code-review-settings` or asks to inspect, show, or verify Copilot Code Review settings for a repository, pull request, or branch.
+description: Show the effective GitHub Copilot Code Review settings for a repository and target branch, including automatic reviews, draft pull requests, new pushes, enforcement, and source rulesets. Use when the user invokes `$copilot-code-review-settings`, asks to inspect, show, or verify Copilot Code Review settings for a repository, pull request, or branch, or another skill explicitly requires this check, especially `pr`.
 ---
 
 # Copilot Code Review Settings
