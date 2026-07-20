@@ -1,0 +1,4 @@
+interface:
+  display_name: "Silly Robot"
+  short_description: "Fix recurring agent behavior at the source"
+  default_prompt: "Use $silly-robot to turn this agent behavior problem into the smallest durable fix."

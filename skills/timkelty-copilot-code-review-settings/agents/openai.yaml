@@ -1,4 +1,0 @@
-interface:
-  display_name: "Copilot Code Review Settings"
-  short_description: "Show effective Copilot review settings"
-  default_prompt: "Use $copilot-code-review-settings to show the effective Copilot Code Review settings for this repository and target branch."
