@@ -1,9 +1,9 @@
 ---
-name: silly-robot
-description: Turn an observed agent behavior problem or preference into the smallest durable improvement without derailing the current task. Use when the user wants future agents to behave differently, asks whether guidance belongs in native settings, instructions, memory, a skill, or a plugin, asks to preserve a workflow preference, or invokes $silly-robot.
+name: agentify
+description: Turn an observed agent behavior problem or preference into the smallest durable improvement without derailing the current task. Use when the user wants future agents to behave differently, asks whether guidance belongs in native settings, instructions, memory, a skill, or a plugin, asks to preserve a workflow preference, or invokes $agentify.
 ---
 
-# Silly Robot
+# Agentify
 
 Fix recurring agent behavior at its source, not one response at a time.
 
