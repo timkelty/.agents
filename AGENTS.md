@@ -11,10 +11,10 @@ When a message mixes questions with code-change requests, this rule takes preced
 
 ## Agent-created tasks
 
-Prefix every Codex task created by the agent with `🤖 `.
+Name each Codex task created by the agent `🤖 <task-name>`. Never include the parent task's title or a project-name prefix.
 
 ### Cross-project changes
 
 When changes span multiple projects, use a dedicated Codex task for each affected project before modifying it. This is standing authorization to create those tasks without asking again.
 
-Name each created task `🤖 [<project-name> / <original-task-name>] <task-name>`, and carry only that project's scope and working-tree changes into it.
+Carry only that project's scope and working-tree changes into it.
