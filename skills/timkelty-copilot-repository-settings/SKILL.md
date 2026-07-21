@@ -1,9 +1,9 @@
 ---
-name: pr-copilot-settings
-description: Show the effective GitHub Copilot Code Review settings for a repository and target branch, including automatic reviews, draft pull requests, new pushes, enforcement, and source rulesets. Use when the user invokes `$pr-copilot-settings` or asks to inspect, show, or verify Copilot Code Review settings for a repository, pull request, or branch.
+name: copilot-repository-settings
+description: Show the effective GitHub Copilot Code Review settings for a repository and target branch, including automatic reviews, draft pull requests, new pushes, enforcement, and source rulesets. Use when the user invokes `$copilot-repository-settings` or asks to inspect, show, or verify Copilot Code Review settings for a repository, pull request, or branch.
 ---
 
-# PR: Copilot settings
+# Copilot Repository Settings
 
 Show the effective repository and inherited ruleset configuration without changing it.
 
