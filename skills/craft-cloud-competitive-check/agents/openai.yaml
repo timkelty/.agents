@@ -1,0 +1,4 @@
+interface:
+  display_name: "Craft Cloud Competitive Check"
+  short_description: "Benchmark Craft Cloud product decisions"
+  default_prompt: "Use $craft-cloud-competitive-check to benchmark this Craft Cloud decision against current comparable platforms."

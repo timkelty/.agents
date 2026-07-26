@@ -9,15 +9,21 @@ If a user message contains a question—or a `?` outside inline or fenced code:
 
 When a message mixes questions with code-change requests, this rule takes precedence.
 
-## Agent-created tasks
+## Task titles
 
-Name each Codex task created by the agent `🤖 <task-name>`. Never include the parent task's title or a project-name prefix.
+Prefix every Codex task title with `[<project-name>]`, including the current task and tasks created by the agent. Use the repository or saved-project name; use `[projectless]` when neither exists.
+
+Name agent-created tasks `[<project-name>] 🤖 <task-name>`. Never include the parent task's title.
 
 ### Cross-project changes
 
 When changes span multiple projects, use a dedicated Codex task for each affected project before modifying it. This is standing authorization to create those tasks without asking again.
 
 Carry only that project's scope and working-tree changes into it.
+
+## Linked references
+
+Whenever giving references (for example, a GitHub PR or issue, or a Linear issue), always link them, including in terse status updates.
 
 ## Public repository safety
 
