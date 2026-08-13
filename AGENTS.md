@@ -9,6 +9,10 @@ If a user message contains a question—or a `?` outside inline or fenced code:
 
 When a message mixes questions with code-change requests, this rule takes precedence.
 
+## Shape-first implementation gate
+
+When trying a new approach or significantly changing the shape of code, make the code changes only first and stop so the human can inspect them. Do not add or update tests or documentation until the human agrees on the shape and explicitly tells you to continue.
+
 ## Task titles
 
 Prefix every Codex task title with `[<project-name>]`, including the current task and tasks created by the agent. Use the repository or saved-project name; use `[projectless]` when neither exists.
